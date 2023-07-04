@@ -39,7 +39,7 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
       "address": "Sasana Lijang, Banke Negara Malaysia ",
       "status": "Unlimited Slots",
       "image":
-          "https://sa1s3optim.patientpop.com/assets/images/provider/photos/1888657.jpg",
+          "https://apicms.thestar.com.my/uploads/images/2023/07/03/2158079.jpg",
     },
     {
       "id": 4,
@@ -49,7 +49,7 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
       "address": "Sasana Lijang, Banke Negara Malaysia ",
       "status": "Unlimited Slots",
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LmG47_W3RM0QBVGI23-vodL_oOOJxLIBrg&usqp=CAU",
+          "https://apicms.thestar.com.my/uploads/images/2023/03/29/1999079.JPG",
     },
     {
       "id": 5,
@@ -98,7 +98,6 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
         backgroundColor: AppColors.bgBlue,
@@ -223,8 +222,7 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
                                                 borderRadius:
                                                     BorderRadiusDirectional
                                                         .circular(5),
-                                                color: const Color.fromARGB(
-                                                    255, 215, 131, 230),
+                                                color: const Color.fromARGB(255, 212, 88, 234),
                                               ),
                                               child: Center(
                                                 child: Padding(
@@ -236,7 +234,8 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
                                                           ['name'],
                                                       style: TextStyle(
                                                           color: Colors.white,
-                                                          fontSize: 12.sp)),
+                                                          fontSize: 12.sp,
+                                                          fontWeight: FontWeight.w700)),
                                                 ),
                                               ),
                                             ),
@@ -248,7 +247,7 @@ class _ActivitiesAndEventState extends State<ActivitiesAndEvent> {
                                                   fontSize: 10.sp),
                                             ),
                                             SizedBox(height: 7.h),
-                                            Container(
+                                            SizedBox(
                                               width: 213.w,
                                               child: Text(
                                                 _foundUsers[index]['des'],
